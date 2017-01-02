@@ -1,0 +1,50 @@
+header
+  .header-content
+    .header-content-inner
+      h1#homeHeading i-Trip Pie
+      hr
+      p 
+      form.form-group.has-success method='post' action='/search'
+        input#inputSuccess1.form-control aria-describedby="helpBlock2" type="search" name='location'
+        button.btn.btn-success type="submit"  Search
+
+
+/ .header-title  TripHobo Search
+/ header
+/   .header-content
+/     .header-content-inner
+/       h1#homeHeading
+/       hr
+/       p 
+/       form#form-search method='post' action='/search'
+/         input placeholder=("type keyword(s) here") type="search" name='location'
+/         button.btn.btn-primary type="submit"  Search
+
+/ .container
+/   #search
+/     button.close type="button"  ×
+/     form#form-search method='post' action='/search'
+/       input placeholder=("type keyword(s) here") type="search" name='location'
+/       button.btn.btn-primary type="submit"  Search
+/ 
+/ javascript:
+/   $(function () {
+/     $('a[href="#search"]').on('click', function(event) {
+/         event.preventDefault();
+/         $('#search').addClass('open');
+/         $('#search > form > input[type="search"]').focus();
+/     });
+/     
+/     $('#search, #search button.close').on('click keyup', function(event) {
+/         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
+/             $(this).removeClass('open');
+/         }
+/     });
+/     
+/     
+/     //Do not include! This prevents the form from submitting for DEMO purposes only!
+/     //$('form').submit(function(event) {
+/       //  event.preventDefault();
+/       //  return false;
+/     //})
+/   });

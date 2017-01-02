@@ -1,0 +1,51 @@
+section
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        h2.section-heading 
+          == "#{@from}"
+        hr.primary
+        p
+        .panel.panel-info
+          .panel-heading TripHobo
+          .panel-body
+            table.table.table-striped.table-hover
+              thead
+                tr
+                  th Order
+                  th Location
+              tbody
+                - unless @triphobo_order.empty?
+                  - @triphobo_order.each_with_index  do |value, index|
+                    tr
+                      td #{index+1}
+                      td #{value[1]}
+                - else
+                  p
+                   | 沒有相符的地址
+          
+            p
+            .panel.panel-info
+              .panel-heading Airbnb
+              .panel-body
+                table.table.table-striped.table-hover
+                  thead
+                    tr
+                      th Order
+                      th Location
+                  tbody
+                    - if @airbnb_order
+                      - unless @airbnb_order.empty?
+                        - @airbnb_order.each_with_index  do |value, index|
+                          tr
+                            td #{index+1}
+                            td #{value[1]}
+                      - else
+                        p
+                         | 沒有相符的地址
+                    - else 
+                        p
+                         | 沒有相符的地址
+                      
+                
+          
