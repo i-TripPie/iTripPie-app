@@ -8,43 +8,65 @@ header
         input#inputSuccess1.form-control aria-describedby="helpBlock2" type="search" name='location'
         button.btn.btn-success type="submit"  Search
 
+section#about.bg-primary
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        h2.section-heading We've got what you need!
+        hr.light
+        p.text-faded You know you want to go to a tourist spot in a city, but you don’t know what is next tourist spot you want to go. Use our services!
+        
+section#team.gray-section.team
+  .container
+    .row.m-b-lg
+      .col-lg-12.text-center
+        .navy-line
+        h1 Our Team
+        p 
+    .row
+      .col-sm-4.wow.fadeInLeft
+        .team-member
+          img.img-responsive.img-circle.img-small alt="" src="https://avatars1.githubusercontent.com/u/10850589?v=3&s=400" /
+          h4
+            span.navy Frank 
+            | Lee
+          ul.list-inline.social-icon
+            li
+              a href="https://github.com/frank1234211" 
+                i.fa.fa-github
+      .col-sm-4
+        .team-member
+          img.img-responsive.img-circle.img-small alt="" src="https://avatars0.githubusercontent.com/u/11695947?v=3&s=400" /
+          h4
+            span.navy Yiwei
+            |  Huang
+          ul.list-inline.social-icon
+            li
+              a href="https://github.com/yiweihuang" 
+                i.fa.fa-github
+      .col-sm-4.wow.fadeInRight
+        .team-member
+          img.img-responsive.img-circle.img-small alt="" src="https://avatars1.githubusercontent.com/u/8776192?v=3&s=400" /
+          h4
+            span.navy Hacker
+            |  Sky
+          ul.list-inline.social-icon
+            li
+              a href="https://github.com/hackersky109" 
+                i.fa.fa-github
+    .row
+      .col-lg-8.col-lg-offset-2.text-center.m-t-lg.m-b-lg
+        p We try to build apps that we are going to use. If you have any comment please contact us.
 
-/ .header-title  TripHobo Search
-/ header
-/   .header-content
-/     .header-content-inner
-/       h1#homeHeading
-/       hr
-/       p 
-/       form#form-search method='post' action='/search'
-/         input placeholder=("type keyword(s) here") type="search" name='location'
-/         button.btn.btn-primary type="submit"  Search
-
-/ .container
-/   #search
-/     button.close type="button"  ×
-/     form#form-search method='post' action='/search'
-/       input placeholder=("type keyword(s) here") type="search" name='location'
-/       button.btn.btn-primary type="submit"  Search
-/ 
-/ javascript:
-/   $(function () {
-/     $('a[href="#search"]').on('click', function(event) {
-/         event.preventDefault();
-/         $('#search').addClass('open');
-/         $('#search > form > input[type="search"]').focus();
-/     });
-/     
-/     $('#search, #search button.close').on('click keyup', function(event) {
-/         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
-/             $(this).removeClass('open');
-/         }
-/     });
-/     
-/     
-/     //Do not include! This prevents the form from submitting for DEMO purposes only!
-/     //$('form').submit(function(event) {
-/       //  event.preventDefault();
-/       //  return false;
-/     //})
-/   });
+section#contact
+aside.bg-dark
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.text-center
+        h2.section-heading 聯絡我們！
+        hr.primary
+        p 假若有使用上的困難或者有遇到任何問題可以發電子郵件給我們，我們會盡快回覆
+      .col-lg-8.col-lg-offset-2.text-center
+        i.fa.fa-envelope-o.fa-3x.sr-contact
+        p
+          a href="#"  feedback@i-tripPie.com
