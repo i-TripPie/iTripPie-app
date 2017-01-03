@@ -16,7 +16,7 @@
   margin-top: 40px;
 }
 .features small {
-  color: #F05F40;
+  color: #28b2e0;
 }
 .features h2 {
   font-size: 18px;
@@ -29,12 +29,12 @@
   font-weight: 200;
 }
 .features-icon {
-  color: #F05F40;
+  color: #28b2e0;
   font-size: 40px;
 }
 .navy-section {
   margin-top: 60px;
-  background: #F05F40;
+  background: #28b2e0;
   color: #fff;
   padding: 20px 0;
 }
@@ -49,7 +49,7 @@
   margin: auto;
 }
 .social-icon a {
-  background: #F05F40;
+  background: #28b2e0;
   color: #fff;
   padding: 4px 8px;
   height: 28px;
@@ -80,7 +80,7 @@
 }
 .pricing-plan .pricing-price span {
   font-weight: 700;
-  color: #F05F40;
+  color: #28b2e0;
 }
 li.pricing-desc {
   font-size: 13px;
@@ -88,7 +88,7 @@ li.pricing-desc {
   padding: 20px 16px ;
 }
 li.pricing-title {
-  background: #F05F40;
+  background: #28b2e0;
   color: #fff;
   padding: 10px;
   border-radius: 4px 4px 0 0;
@@ -98,14 +98,14 @@ li.pricing-title {
 .testimonials {
   padding-top: 40px;
   padding-bottom: 60px;
-  background-color: #F05F40;
+  background-color: #28b2e0;
   background-image: url('../img/avatar_all.png');
 }
 .big-icon {
   font-size: 56px;
 }
 .features .big-icon {
-  color: #F05F40;
+  color: #28b2e0;
 }
 .contact {
   background-image: url('../img/word_map.png');
